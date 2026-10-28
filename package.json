@@ -1,0 +1,21 @@
+{
+  "name": "auction-bidding-api",
+  "version": "1.0.0",
+  "description": "Auction bidding API (POST /bid) backed by RethinkDB",
+  "private": true,
+  "type": "module",
+  "addition": 1,
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "db:setup": "node scripts/setup-db.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test test/bid.test.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "rethinkdb": "2.4.2"
+  }
+}
